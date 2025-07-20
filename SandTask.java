@@ -1,4 +1,6 @@
-package com.example.sandplacer;
+public class SandTask {
+    public static boolean ENABLED = false;
+    package com.example.sandplacer;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.EntityPlayerSP;
