@@ -16,3 +16,15 @@ public class SandPlacerMod {
         MinecraftForge.EVENT_BUS.register(new SandTask());
     }
 }
+
+import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
+
+@Mod(modid = SandPlacerMod.MODID, version = SandPlacerMod.VERSION)
+public class SandPlacerMod {
+    ...
+
+    @Mod.EventHandler
+    public void onServerStarting(FMLServerStartingEvent event) {
+        event.registerServerCommand(new CommandSandPlacer());
+    }
+}
