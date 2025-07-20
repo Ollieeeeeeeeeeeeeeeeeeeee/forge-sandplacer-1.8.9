@@ -1,6 +1,11 @@
 public class SandTask {
     public static boolean ENABLED = false;
-    package com.example.sandplacer;
+
+    @SubscribeEvent
+    public void onTick(TickEvent.ClientTickEvent event) {
+        if (!ENABLED) return;
+        // ... existing logic
+    }
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.EntityPlayerSP;
